@@ -37,6 +37,10 @@
     display: flex;
     justify-content: flex-start;
 
+    @include respond-to(xs) {
+      flex-direction: column;
+    }
+
     &-heading {
       font-size: $font-size-h3;
       font-weight: $font-weight-black;
@@ -65,6 +69,11 @@
 
       & + .chi-main__title-subheading {
         border-left: 0.0625rem solid $color-border-base;
+        @include respond-to(xs) {
+          padding-left: 0;
+          border-left: 0;
+          align-self: flex-start;
+        }
       }
     }
 
