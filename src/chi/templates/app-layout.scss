@@ -70,7 +70,7 @@
       & + .chi-main__title-subheading {
         border-left: 0.0625rem solid $color-border-base;
         @include respond-to(xs) {
-          padding-left: 0;
+          padding: 0.75rem 0 0;
           border-left: 0;
           align-self: flex-start;
         }
